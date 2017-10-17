@@ -1,0 +1,22 @@
+{
+  "name": "@oticon/utilities",
+  "version": "1.0.0",
+  "description": "Helper utilities used in solutions developed in SMS.",
+  "scripts": {
+    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
+    "prepublish": "npm run compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sadi Kaya <skay@oticon.com> (https://oticon.com)",
+  "license": "UNLICENSED",
+  "private": false,
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "raven-js": "^3.18.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1"
+  }
+}
