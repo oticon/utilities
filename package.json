@@ -1,12 +1,13 @@
 {
   "name": "@oticon/utilities",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Helper utilities used in solutions developed in SMS.",
   "scripts": {
     "compile": "babel --presets es2015,stage-0 -d lib/ src/",
     "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "./lib/index.js",
   "author": "Sadi Kaya <skay@oticon.com> (https://oticon.com)",
   "license": "UNLICENSED",
   "private": false,
