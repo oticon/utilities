@@ -19,3 +19,13 @@ function log(ex, context) {}
 ```javascript
 function parse(xml) {}
 ```
+
+## shuffle
+```javascript
+function shuffle(arr) {}
+```
+
+## preloadImages
+```javascript
+function preloadImages(arr) {}
+```
