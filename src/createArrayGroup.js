@@ -4,7 +4,7 @@
  * @param chunkSize
  * @returns {Array}
  */
-export function createArrayGroup(arr, chunkSize) {
+function createArrayGroup(arr, chunkSize) {
   let groups = [], i;
 
   for (i = 0; i < arr.length; i += chunkSize) {
@@ -13,3 +13,5 @@ export function createArrayGroup(arr, chunkSize) {
 
   return groups;
 }
+
+module.exports = createArrayGroup;

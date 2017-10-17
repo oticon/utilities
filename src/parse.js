@@ -5,7 +5,7 @@ import _ from "lodash";
  * @param obj
  * @returns {*}
  */
-export function flatten(obj) {
+function flatten(obj) {
   const check = _.isPlainObject(obj) && _.size(obj) === 1;
   return check ? flatten(_.values(obj)[0]) : obj;
 }
@@ -15,7 +15,7 @@ export function flatten(obj) {
  * @param xml
  * @returns {*}
  */
-export function parse(xml) {
+function parse(xml) {
   let data = {};
 
   const isText = xml.nodeType === 3;
@@ -77,3 +77,5 @@ export function parse(xml) {
 
   return flatten(data);
 }
+
+module.exports = parse;
