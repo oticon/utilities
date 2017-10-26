@@ -10,11 +10,6 @@ function asset(asset, path, url) {}
 function createArrayGroup(arr, chunkSize) {}
 ```
 
-## innerHTML
-```javascript
-function innerHTML(data) {}
-```
-
 ## log
 ```javascript
 function log(ex, context) {}
