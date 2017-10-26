@@ -1,6 +1,6 @@
 {
   "name": "@oticon/utilities",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Helper utilities used in solutions developed in SMS.",
   "scripts": {
     "compile": "babel --presets es2015,stage-0 -d lib/ src/",
