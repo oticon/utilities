@@ -20,7 +20,7 @@ function innerHTML(data) {}
 function log(ex, context) {}
 ```
 
-## parser
+## parse
 ```javascript
 function parse(xml) {}
 ```
