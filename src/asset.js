@@ -7,6 +7,10 @@
  */
 function asset(asset, path, url) {
   if (process.env.NODE_ENV === "production") {
+    if (asset[path] === undefined) {
+      return undefined;
+    }
+
     return "." + asset[path];
   }
 
