@@ -5,7 +5,7 @@
  * @param url
  * @returns {*}
  */
-module.exports.asset = (asset, path, url) => {
+function asset(asset, path, url) {
   if (process.env.NODE_ENV === "production") {
     if (asset[path] === undefined) {
       return undefined;
@@ -15,4 +15,6 @@ module.exports.asset = (asset, path, url) => {
   }
 
   return asset[url];
-};
+}
+
+module.exports = asset;
