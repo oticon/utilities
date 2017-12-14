@@ -1,4 +1,9 @@
-const preloadImages = arr => {
+/**
+ * preloadImages fn
+ * @param arr
+ * @returns {Promise<[any]>}
+ */
+module.exports.preloadImages = (arr) => {
   const loadImage = src => {
     return new Promise((resolve, reject) => {
       const img = new Image();
@@ -22,5 +27,3 @@ const preloadImages = arr => {
 
   return Promise.all(promises);
 };
-
-module.exports = preloadImages;

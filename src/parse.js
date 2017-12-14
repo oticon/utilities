@@ -1,7 +1,7 @@
 import _ from "lodash";
 
 /**
- * flatten function
+ * flatten fn
  * @param obj
  * @returns {*}
  */
@@ -11,11 +11,11 @@ function flatten(obj) {
 }
 
 /**
- * parse function
+ * parse fn
  * @param xml
  * @returns {*}
  */
-function parse(xml) {
+module.exports.parse = (xml) => {
   let data = {};
 
   const isText = xml.nodeType === 3;
@@ -76,6 +76,4 @@ function parse(xml) {
   }
 
   return flatten(data);
-}
-
-module.exports = parse;
+};

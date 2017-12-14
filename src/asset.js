@@ -1,11 +1,11 @@
 /**
- * asset function
+ * asset fn for handling dev/prod assets
  * @param asset
  * @param path
  * @param url
  * @returns {*}
  */
-function asset(asset, path, url) {
+module.exports.asset = (asset, path, url) => {
   if (process.env.NODE_ENV === "production") {
     if (asset[path] === undefined) {
       return undefined;
@@ -15,6 +15,4 @@ function asset(asset, path, url) {
   }
 
   return asset[url];
-}
-
-module.exports = asset;
+};
