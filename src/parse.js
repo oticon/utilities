@@ -5,13 +5,13 @@ import _ from "lodash";
  * @param obj
  * @returns {*}
  */
-function flatten(obj) {
+const flatten = (obj) => {
   const check = _.isPlainObject(obj) && _.size(obj) === 1;
   return check ? flatten(_.values(obj)[0]) : obj;
-}
+};
 
 /**
- * parse fn
+ * parse
  * @param xml
  * @returns {*}
  */

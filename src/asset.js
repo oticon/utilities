@@ -1,5 +1,5 @@
 /**
- * asset fn for handling dev/prod assets
+ * asset
  * @param asset
  * @param path
  * @param url
