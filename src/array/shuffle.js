@@ -5,7 +5,7 @@
  * @returns {*}
  */
 function shuffle(arr) {
-  return arr.sort(() => Math.random() >= 0.5 ? -1 : 1); // shuffle([1,2,3]) -> [1,3,2]
+  return arr.sort(() => Math.random() - 0.5); // shuffle([1,2,3]) -> [2, 3, 1]
 }
 
 module.exports = shuffle;
