@@ -8,4 +8,4 @@ function shuffle(arr) {
   return arr.sort(() => Math.random() - 0.5); // shuffle([1,2,3]) -> [2, 3, 1]
 }
 
-module.exports = shuffle;
+export { shuffle };

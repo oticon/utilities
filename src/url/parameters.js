@@ -12,4 +12,4 @@ function parameters(url) {
   ); // parameters('http://url.com/?firstname=Sadi&lastname=Kaya') -> { firstname: "Sadi", lastname: "Kaya" }
 }
 
-module.exports = parameters;
+export { parameters };

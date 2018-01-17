@@ -28,4 +28,4 @@ function preloadImages(arr) {
   return Promise.all(promises);
 }
 
-module.exports = preloadImages;
+export { preloadImages };

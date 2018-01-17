@@ -17,4 +17,4 @@ function asset(asset, path, url) {
   return asset[url];
 }
 
-module.exports = asset;
+export { asset };

@@ -9,4 +9,4 @@ function redirect(url, asLink = true) {
   return asLink ? window.location.href = url : window.location.replace(url); // redirect('https://oticon.com')
 }
 
-module.exports = redirect;
+export { redirect };

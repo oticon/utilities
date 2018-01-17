@@ -10,4 +10,4 @@ function difference(a, b) {
   return a.filter(x => !s.has(x)); // difference([1,2,3], [1,2]) -> [3]
 }
 
-module.exports = difference;
+export { difference };

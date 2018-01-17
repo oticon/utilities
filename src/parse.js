@@ -78,4 +78,4 @@ function parse(xml) {
   return flatten(data);
 }
 
-module.exports = parse;
+export { parse };

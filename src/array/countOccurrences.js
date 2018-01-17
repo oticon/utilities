@@ -8,4 +8,4 @@ function countOccurrences(arr, value) {
   return arr.reduce((a, v) => v === value ? a + 1 : a + 0, 0); // countOccurrences([1,1,2,1,2,3], 1) -> 3
 }
 
-module.exports = countOccurrences;
+export { countOccurrences };

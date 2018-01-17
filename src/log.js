@@ -13,4 +13,4 @@ function log(ex, extra) {
   }
 }
 
-module.exports = log;
+export { log };

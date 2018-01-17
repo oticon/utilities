@@ -10,4 +10,4 @@ function intersection(a, b) {
   return a.filter(x => s.has(x)); // intersection([1,2,3], [1,2]) -> [2,3]
 }
 
-module.exports = intersection;
+export { intersection };

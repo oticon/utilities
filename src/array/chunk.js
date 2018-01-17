@@ -13,4 +13,4 @@ function chunk(arr, size) {
     .map((v, i) => arr.slice(i * size, i * size + size)); // chunk([1,2,3,4,5], 2) -> [[1,2], [3,4], 5]
 }
 
-module.exports = chunk;
+export { chunk };
