@@ -3,18 +3,19 @@
   "version": "1.6.1",
   "description": "Helper utilities used in solutions developed in SMS.",
   "scripts": {
-    "compile": "babel --presets es2015,stage-0 -d lib/ src/",
-    "prepare": "npm run compile"
+    "build": "babel --presets es2015,stage-0 -d lib/ src/",
+    "prepublish": "npm run build"
   },
   "main": "./lib/index.js",
   "author": "Sadi Kaya <skay@oticon.com> (https://oticon.com)",
   "license": "ISC",
-  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "lodash": "^4.17.4",
     "raven-js": "^3.23.3"
   },
-  "peerDependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
