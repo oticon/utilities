@@ -8,6 +8,7 @@ export * from './array/flatten';
 export * from './array/unique';
 export * from './array/shuffle';
 export * from './asset';
+export * from './assetWithBasePath';
 export * from './log';
 export * from './parse';
 export * from './preloadImages';
