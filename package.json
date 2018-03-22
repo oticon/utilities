@@ -4,8 +4,7 @@
   "description": "Helper utilities used in solutions developed in SMS.",
   "scripts": {
     "compile": "babel --presets es2015,stage-0 -d lib/ src/",
-    "prepare": "npm run compile",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepare": "npm run compile"
   },
   "main": "./lib/index.js",
   "author": "Sadi Kaya <skay@oticon.com> (https://oticon.com)",
