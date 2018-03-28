@@ -6,11 +6,11 @@
  * @returns {*}
  */
 function assetWithBasePath(asset, basePath, isProd) {
-  if (process.env.NODE_ENV === "production" && isProd === true) {
-    if (asset.mediapath === undefined || asset.mediaurl === undefined) {
-      return undefined;
-    }
+  if (asset.mediapath === undefined || asset.mediaurl === undefined) {
+    return undefined;
+  }
 
+  if (process.env.NODE_ENV === "production" && isProd === true) {
     return basePath + asset.mediapath;
   }
 

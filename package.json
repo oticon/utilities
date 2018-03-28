@@ -9,9 +9,6 @@
   "main": "./lib/index.js",
   "author": "Sadi Kaya <skay@oticon.com> (https://oticon.com)",
   "license": "ISC",
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "lodash": "^4.17.4",
     "raven-js": "^3.23.3"
