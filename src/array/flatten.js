@@ -1,10 +1,12 @@
 /**
  * Array flatten
- *   Use `Array.reduce()` to get all elements inside the array and `concat()` to flatten them.
+ *   Use `Array.reduce()` to get all elements inside the array recursively and `concat()` to flatten them.
  * @param arr
  */
 function flatten(arr) {
-  return arr.reduce((a, v) => a.concat(v), []); // flatten([1,[2],3,4]) -> [1,2,3,4]
+  return arr.reduce((flat, toFlatten) => {
+    return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+  }, []);
 }
 
 export { flatten };
