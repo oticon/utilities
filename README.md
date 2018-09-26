@@ -115,11 +115,18 @@ If you're using React 16 or above, [Error Boundaries](https://reactjs.org/blog/2
 ```javascript
 log(ex, extra);
 ```
+ 
+ #### Parse
+ 
+ ```javascript
+ parse(xml);
+ // xml -> js
+ ```
 
-#### Parse
+#### XMLParser
 
 ```javascript
-parse(xml);
+XMLParser(xml);
 // xml -> js
 ```
 

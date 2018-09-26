@@ -11,6 +11,7 @@ export * from './asset';
 export * from './assetWithBasePath';
 export * from './log';
 export * from './parse';
+export * from './xmlParser';
 export * from './preloadImages';
 export * from './url/parameters';
 export * from './url/redirect';
